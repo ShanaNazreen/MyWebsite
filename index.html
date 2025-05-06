@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
-
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,8 +23,6 @@
   "logo": "https://www.luxvia.co/assets/img/logo.png"
 }
 </script>
-
-
 </head>
 <body id="page-top">
 <div id="preloader"></div>
@@ -35,12 +31,12 @@
   <div class="container">
     <div class="navbar-header page-scroll">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand page-scroll" href="#page-top"><img src="assets/img/Luxvia-logo.png" alt="logo" title="" style="height: 50px; width: 165px;" /></a> </div>
+      <a class="navbar-brand page-scroll" href="#page-top"><img src="assets/img/Luxvia-logo.png" alt="Luxvia Logo" title="Luxvia Qatar Logo" style="height: 50px; width: 165px;" /></a> </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li> <a class="page-scroll" href="#about">ABOUT US</a></li>
-        <li> <a class="page-scroll" href="#service">Our Services</a></li>
-        <li><a class="page-scroll" style="background:none" href="#contact">Contact Us</a></li>
+        <li> <a class="page-scroll" href="#about" aria-label="About Us">ABOUT US</a></li>
+        <li> <a class="page-scroll" href="#service" aria-label="Our Services">Our Services</a></li>
+        <li><a class="page-scroll" style="background:none" href="#contact" aria-label="Contact Us">Contact Us</a></li>
       </ul>
     </div>
   </div>
@@ -220,14 +216,11 @@
   const scriptURL = 'https://script.google.com/macros/s/AKfycbw-8sLEyPwl4r6KFhwZqPG5mxJ4so3r1eGAr9K3e1PxxMRZjeMBeO_D5p7ivkliuIKk/exec';
   const form = document.getElementById('main-contact-form');
 const messageElement = document.getElementById('form-message'); // Get the message element
-
 form.addEventListener('submit', e => {
   e.preventDefault();
   const formData = new FormData(form);
-
   // Reset the message before sending
   messageElement.innerHTML = '';
-
   fetch(scriptURL, {
     method: 'POST',
     body: formData
@@ -246,7 +239,6 @@ form.addEventListener('submit', e => {
   });
 });
 </script>
-  
 <!-- jQuery -->
 <script  src="assets/js/jquery-2.2.4.js"></script>
 <script  src="assets/js/scrolltopcontrol.js"></script>
@@ -255,6 +247,4 @@ form.addEventListener('submit', e => {
 <script src="assets/js/creative.min.js"></script>
 <!-- jQuery -->
 </body>
-
-
 </html>
